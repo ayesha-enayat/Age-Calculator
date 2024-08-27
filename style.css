@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(#283c86, #45a247);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Add some padding to the container */
+}
+
+.card {
+    background-color: #faffd1;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px; /* Set a max width for responsiveness */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 0 auto; /* Center the card horizontally */
+}
+
+.card-header {
+    color: #45a247;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.card-title,
+.card-text {
+    color: #283c86;
+}
+
+.btn {
+    background-color: #45a247;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center; /* Center the text */
+    padding: 10px; /* Add padding for better click area */
+}
+
+.btn:hover {
+    background-color: #2fc032;
+    color: #283c86;
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 15px;
+    }
+
+    .card-header {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding: 10px;
+    }
+
+    .card-header {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        padding: 10px; /* Further reduced padding for smaller screens */
+    }
+}
+
+#result {
+    color: red;
+    padding: 0px 0px 5px 0px;
+}
